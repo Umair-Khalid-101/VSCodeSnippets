@@ -1,0 +1,98 @@
+{
+	"KeyBoardAvoiding and ScrollView":{
+		"scope":"javascriptreact",
+		"prefix":"rnkasv",
+		"body": [
+			"import {",
+			"  ScrollView,",
+			"  KeyboardAvoidingView,",
+			"  StyleSheet"
+			"\\} from 'react-native';",
+			"import React, { useState } from 'react';",
+			"import { SafeAreaView } from 'react-native-safe-area-context';",
+			"",
+			"export default function ${1:ComponentName}() {",
+			"  // Your component logic here",
+			"  return (",
+			"    <SafeAreaView style={styles.container}>",
+			"      <KeyboardAvoidingView style={styles.keyboardAvoidingContainer} behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>",
+			"        <ScrollView contentContainerStyle={styles.scrollContainer}>",
+			"          {/* Your UI components here */}",
+			"        </ScrollView>",
+			"      </KeyboardAvoidingView>",
+			"    </SafeAreaView>",
+			"  );",
+			"};",
+			"",
+			"const styles = StyleSheet.create({",
+			"  container: {",
+			"    flex: 1,",
+			"  },",
+			"  keyboardAvoidingContainer: {",
+			"    flex: 1,",
+			"  },",
+			"  scrollContainer: {",
+			"    flexGrow: 1,",
+			"  },",
+			"});",
+			"",
+		  ],
+		"description": "Creates a Keyboard Avoiding ScrollView in React Native"
+	},
+	"Print Yellow to console": {
+		"scope": "javascriptreact",
+		"prefix": "yclg",
+		"body": [
+			"console.log('\\n$1: \\n\\x1b[33m%s\\x1b[0m\\n', $2);",
+		],
+		"description": "Yellow Console Log"
+	},
+	"Print Cyan to console": {
+		"scope": "javascriptreact",
+		"prefix": "cclg",
+		"body": [
+			"console.log('\\n$1: \\n\\x1b[36m%s\\x1b[0m\\n', $2);",
+		],
+		"description": "Cyan Console Log"
+	},
+	"Print Red to console": {
+		"scope": "javascriptreact",
+		"prefix": "rclg",
+		"body": [
+			"console.log('\\n$1: \\n\\x1b[31m%s\\x1b[0m\\n', $2);",
+		],
+		"description": "Red Console Log"
+	},
+	"Print Green to console": {
+		"scope": "javascriptreact",
+		"prefix": "gclg",
+		"body": [
+			"console.log('\\n$1: \\n\\x1b[32m%s\\x1b[0m\\n', $2);",
+		],
+		"description": "Green Console Log"
+	},
+	"Print Blue to console": {
+		"scope": "javascriptreact",
+		"prefix": "bclg",
+		"body": [
+			"console.log('\\n$1: \\n\\x1b[34m%s\\x1b[0m\\n', $2);",
+		],
+		"description": "Blue Console Log"
+	},
+	"Print Magenta to console": {
+		"scope": "javascriptreact",
+		"prefix": "mclg",
+		"body": [
+			"console.log('\\n$1: \\n\\x1b[35m%s\\x1b[0m\\n', $2);",
+		],
+		"description": "Magenta Console Log"
+	},
+	"Print White to console": {
+		"scope": "javascriptreact",
+		"prefix": "wclg",
+		"body": [
+			"console.log('\\n$1: \\n\\x1b[37m%s\\x1b[0m\\n', $2);",
+		],
+		"description": "White Console Log"
+	},
+}
